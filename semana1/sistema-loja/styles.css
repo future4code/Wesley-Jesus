@@ -1,0 +1,182 @@
+
+
+* {
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+    color: #fce700;
+    margin: 0;
+}
+
+body {
+    background-color: #51075b;
+    margin: none;
+}
+
+
+#um {
+    text-align: center;
+    font-size: 300%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#dois {
+    width: 35%;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 60%;
+}
+
+.um {
+    text-shadow: -3px 4px #000000;
+    text-align: right;
+    margin: 15px;
+    
+}
+
+.um:hover {
+    color: #999892;
+    text-shadow: -3px 4px #c107f9;
+}
+
+hr {
+    border-color: #c107f9;
+    height: 1px;
+}
+
+.menu1 {
+    text-align: right;
+    /* padding: 2px 2px; */
+    margin: 1% .5%;
+    display: relative;
+}
+
+nav {
+    display: relative;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: #590772;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 5px 3px 5px 3px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffd800;
+    display: relative;
+    box-shadow: -3px 4px #362f06;
+    }
+
+/* a:visited {
+    color: #ffffff;
+    } */
+
+a:hover {
+    color: #362f06;
+}
+
+
+figure.fig {
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 29%;
+    display: block;
+    box-shadow: -3px 4px;
+    }
+
+#fig {
+    width: 100%;
+    align-items: center;
+    border-radius: 3%;
+    border: 4px solid #ffd800;
+    
+}
+
+footer {
+    background-color: #999892;
+    margin-top: none;
+    padding: 10px;
+    position: relative;
+}
+
+#tres {
+    color: #51075b;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -3px 4px #ffffff;
+    text-align: center;
+}
+
+#quatro {
+
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    margin-left: 8%;
+}
+
+.tab {
+    width: 100%;
+    /*margin-left: 15%;*/
+    display: relative;
+    border: 0;
+    background-color: #f9eba2;
+    margin-bottom: 20%;
+    
+}
+
+.imgtab {
+    border: 4px solid #ffd800;
+    border-radius: 4px;
+}
+
+.td1 {
+    border: 0;
+    color: #590772;
+}
+
+.th {
+    color: #590772;
+    text-shadow: -2px 3px #a58f13;
+}
+
+
+#th {
+    background-color: #f9d507;
+    margin: 0;
+    padding: 10px;
+
+}
+
+#tbfunc {
+    margin-left: 30%;
+    padding-top: 3%;
+    text-align: justify;
+}
+
+.thcol {
+    font-size: 150%;
+    color: #590772;
+}
+
+
+
+form {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-bottom: 20%;
+    text-align: left;
+}
+
+.but {
+    background-color: #590772;
+    color: #f9d507;
+
+}
+
+.descr {
+    margin: 3px;
+    
+}
+

@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adicionar produtos ao site</title>
-</head>
-<body bgcolor="#8B008B" link="#FFFF00" vlink="#FFD700" alink="#ffffcc">
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Colaboradores</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gayathri|Oswald|Raleway&display=swap" rel="stylesheet">
     
-    <font color="#FFFF00" face="verdana">
-        <h1 align="center">Upload galeria</h1>
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="um" id="um">Wesley's Photo Gallery</h1>
+            <h3 class="um" id="dois">Loja virtual para vendas de foto-quadros - Bem-Vind@s!!</h3>
+            <hr>
+        </header>
+    
+        <nav class="menu1">
+            <a class="dois" href="home.html">Home</a>
+            <a class="dois" href="estoque.html">Quadros disponíveis</a">
+            <a class="dois" href="addproduto.html">Adicionar quadros</a>
+            <a class="dois" href="funcionarios.html">Colaboradores</a>
+        </nav>
+
+        <main>
+    
+    
+        <h1 class="um" id="quatro">Upload galeria</h1>
         <hr>
             <form name="upload">
-                <label for="file">Procure pelo arquivo:</label><br>
-                <input type= "file" name="file" id="file" />
-                <br><br>
-                <label for="descricao">Descrição:</label><br>
-                <textarea name="descricao" id="descricao" rows="2" cols="40">Digite uma breve descrição do produto</textarea>
-                <br>
-                <br>
+                <label for="file" class="search">Procure pelo arquivo:</label>
+                <input type= "file" name="file" class="file" /><br><br>
+                
+                <label for="descricao" class="descr">Descrição:</label><br>
+                <textarea name="descricao" class="descricao" rows="2" cols="40">Digite uma breve descrição do produto</textarea><br><br>
+                
                 <label for="quantity">Quantidade:</label><br>
-                    <input type="number" placeholder="Quantidade disponível" />
-                <br><br>
+                    <input type="number" placeholder="Quantidade disponível" class="inp" /><br><br>
+                
                 <label for="preco">Valor:</label><br>
-                    <input type="text" placeholder="R$ 000,00" id="preco" name="preco" /><br><br>
+                <input type="text" placeholder="R$ 000,00" id="preco" name="preco" /><br><br>
 
-                <button type="submit">Enviar</button> <input type="reset" value="Apagar" />
+                <button type="submit" class="but">Enviar</button> <input type="reset" value="Apagar" class="but"/>
             </form>
-        <center>
-            <br><br>
-            <a href="home.html">Clique aqui caso queira retornar para a página inicial.</a>
-        </center>
 
-    </font>
+        </main>
+        <hr> 
+        <footer class="rodape">
+            <h3 class="um" id="tres">Página criada por W. Araujo Soluções Interativas EIReLi.</h3>
+        </footer>   
+
+        
 </body>
 </html>
