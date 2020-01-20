@@ -154,3 +154,8 @@ td button:hover {
 #back-button:hover {
     background-color: #635a3d
 }
+
+div.voltar {
+    text-align: center;
+    }
+}
