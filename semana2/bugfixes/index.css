@@ -32,6 +32,11 @@ img {
 
 div>p:first-child {
     display: block;
+    margin: auto;
+}
+
+.somos {
+    width: 210px;
 }
 
 div img {
@@ -70,6 +75,11 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding-top: 10%;
+}
+
+.somos {
+    width:210px;
 }
 
 #container-de-descricao>ol {
