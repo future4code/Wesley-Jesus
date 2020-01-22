@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    color: #ffffff;
+}
+
+.container1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    
+
+}
+
+.header {
+    background-color: #38ca49;
+    width: 20%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav {
+    background-color: #feda31;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1 {
+    background-color: #ed25bc;
+    width: 100%;
+    height: 367px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content2 {
+    background-color: #1277d6;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-ext {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.image {
+    background-color: #fc433e;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.extra {
+    background-color: #2afd77;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer {
+    background-color: #af22c6;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
