@@ -156,7 +156,6 @@ main#video {
     }
 
     .figure {
-        /* margin: 0.5vh 0 0.5vh 0; */
         width: 60%;
         height: 1vw;
 
@@ -164,17 +163,10 @@ main#video {
 
     footer {
         position: relative;
-        /* display: absolute; */
         bottom: 0;
     }
 
-    /* #video {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    } */
+    
 
 }
 
