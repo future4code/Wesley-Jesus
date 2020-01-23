@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+}
+
+.container-principal {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.esquerdo {
+    width: 12%;
+    margin-right: 3px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.listas {
+    width: 100vw;
+}
+
+.themelist {
+    align-items: flex-start;
+    padding: 1em 0 1em 2em;
+    display: fixed;
+    position: top;
+}
+.lista {
+    margin: 0;
+    padding: 0.5;
+    width: 100%;
+    display: fixed;
+    position: top;
+}
+
+.direita {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.dir-0 {
+    width: 100%;
+    height: 20%;
+    background-color: #ff0000;
+    color: #ff0000;
+}
+
+.dir-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linha1 {
+    width: 32%;
+    height: 45%;
+    border: 1px solid #000000;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#linha-1a {
+    background-color: #1a00ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#linha-1b {
+    background-color: #fffe03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#linha-1c {
+    background-color: #0b7f2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#linha-1d {
+    background-color: #1a00ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#linha-1e {
+    background-color: #fffe03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#linha-1f {
+    background-color: #0b7f2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dir-1a {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.linha2 {
+    width: 49%;
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dir-1b {
+    padding-top: 1em;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linha3 {
+    width: 32%;
+    height: 100%;
+    border: 1px solid #000000;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 1000px) {
+    .container-principal {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }    
+
+
+
+    .dir-0 {
+        width: 100%;
+        height: 30vh;
+        background-color: #ff0000;
+        color: #ff0000;
+    }
+
+    .dir1 {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    
+    }
+
+     #linha-1a, #linha-1b, #linha-1d, #linha-1e{
+        width: 49%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+    }
+
+    #linha-1c, #linha-1f {
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+
+    } 
+
+    .dir-1a {
+        padding: 0;
+        margin: 3vh 0 0 0;
+        height: 30vh;
+    }
+
+    .linha2 {
+        height: 30vh;
+
+    }
+
+    .dir-1b {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    
+    }
+
+    
+
+    #linha-3a, #linha-3b{
+        width: 49%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+    }
+
+    #linha-3c{
+        width: 99%;
+        height: 30vh;
+        margin: 3vh 0 0 0;
+
+    }
+    
+
+
+
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 400px) {
+    
+    .esquerdo {
+        display: none;
+    }
+}
+
+
+@media screen and (min-device-width: 100px) and (max-device-width: 400px) {
+    
+    .esquerdo {
+        display: none;
+    }
+
+    .container-principal {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }    
+
+    .dir-0 {
+        width: 100%;
+        height: 30vh;
+        background-color: #ff0000;
+        color: #ff0000;
+    }
+
+    .dir1 {
+        width: 100vw;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    
+    }
+
+    .dir-1a {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dir-1b {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .linha1, .linha2, .linha3 {
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+    }
+
+    /*#linha-1c, #linha-1f {
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+
+    }
+
+    .dir-1a {
+        padding: 0;
+        margin: 3vh 0 0 0;
+        height: 60vh;
+    }
+
+    .linha2 {
+        height: 60vh;
+
+    }
+
+    .dir-1b {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    
+    }
+
+    
+
+    #linha-3a, #linha-3b{
+        width: 49%;
+        height: 30vh;
+        padding: 0;
+        margin: 3vh 0 0 0;
+    }
+
+    #linha-3c{
+        width: 99%;
+        height: 30vh;
+        margin: 3vh 0 0 0;
+
+    }
+
+}
+
+
+*/
+
+/* @media screen and (min-device-width: 800px) and (max-device-width: 1100px) {
+    .container-principal {
+        width: 100vw;
+        grid-template: 50% 50% / 100%;
+        align-items: space-evenly;
+        justify-content: center;
+    }    
+
+}
+ */
