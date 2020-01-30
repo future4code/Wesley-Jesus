@@ -75,7 +75,18 @@ for(const item of lista){
 console.log(novaLista)
 
 
-DESAFIO (Se der tempo)
+DESAFIO 
+
+Quando digitamos o número 4 no prompt, ele considera o valor que consta na quantidadeAtual e, enquanto a quantidadeAtual
+for menor que a total (a digitada), será criada uma linha e, para cada variável asterisco com valor inicial 0, enquanto
+o valor de asteriscos for menor que a soma de quantidadeAtual com 1, com o incremento no valor de asteriscos também no
+valor de 1; na linha será colocada a quantidade zeros correspondentes ao número da linha. Logo após, a linha passa a ter 
+a quantidade de zeros respectiva à sua posição, e o script soma 1 a quantidadeAtual. Reinicia-se o processo até que a 
+condição de quantidadeAtual < quantidadeTotal seja falsa (4 < 4 = F), ficando da seguinte forma:
+0
+00
+000
+0000 
 
 
 =============================
@@ -140,6 +151,35 @@ for(i = 0; i < arrayOriginal.length; i++) {
     console.log(mensagem)
 }
 
+// Desafio 2
+
+let numASerAdivinhado = Number(prompt("Olá! Digite o número a ser adivinhado pelo seu adversário:"))
+let i = 1
+let sum = 0
+console.log("Vamos jogar!!")
+let numAdversario = Number(prompt("E aí? Qual o número que foi digitado pelo seu oponente?"))
+
+while(numASerAdivinhado !== numAdversario) {
+    
+        if(numAdversario < numASerAdivinhado){
+            numAdversario = Number(prompt("Béééé!! Você digitou " + numAdversario + ", logo, errou! É maior!"))
+
+            
+        }
+
+        
+
+        if(numAdversario > numASerAdivinhado){
+            numAdversario = Number(prompt("Béééé!! Você digitou " + numAdversario + ", logo, errou! É menor!"))
+
+            
+        }
+
+        sum ++
+    
+    }
+
+    console.log("PARABÉNS! Você adivinhou o número. Você acertou após " + sum + " tentativas.")
 
 
-
+// Desafio 3 - Ainda não concluído. Será enviado na reentrega após as 17h.
