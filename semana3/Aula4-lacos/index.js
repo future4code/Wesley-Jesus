@@ -183,3 +183,39 @@ while(numASerAdivinhado !== numAdversario) {
 
 
 // Desafio 3 - Ainda não concluído. Será enviado na reentrega após as 17h.
+
+let numASerAdivinhado = Math.floor(Math.random() * 100);
+
+let sum = 0
+console.log("Vamos jogar!!")
+let numAdversario = Number(prompt("E aí? Qual número eu, o computador, estou pensando?"))
+
+while(numASerAdivinhado !== numAdversario) {
+    
+        if(numAdversario < numASerAdivinhado){
+            numAdversario = Number(prompt("Béééé!! Você digitou " + numAdversario + ", logo, errou! É maior!"))
+
+            
+        }
+
+        
+
+        if(numAdversario > numASerAdivinhado){
+            numAdversario = Number(prompt("Béééé!! Você digitou " + numAdversario + ", logo, errou! É menor!"))
+
+            
+        }
+
+        sum ++
+    
+    }
+
+    console.log("PARABÉNS! Você adivinhou o número. Você acertou após " + sum + " tentativas.")
+
+    /* Sobre o Desafio 3:
+    Estes desafios estão impressionantes, eu particularmente, nunca me senti tão motivado e focado em concluí-los. Sobre 
+    o desafio 3, não foi difícil fazer a alteração, bastou eu tirar o prompt com a inserção do número a ser adivinhado, e
+    colocar a propriedade Math.floor(Math.random() * 100). Pelo que entendi, math.floor faz o arredondamento dos valores,
+    já que math.random() retorna valores decimais no intervalo [0,1[ (entre 0 inclusive e 1 exclusive). Com math.floor, 
+    eu disse ao console que quero arredondar os valores de math.random() e multiplicá-los por 100, para que consiga números
+    inteiros. Senti-me um vitorioso, hoje, ao conseguir concluir os exercícios e desafios propostos! */
