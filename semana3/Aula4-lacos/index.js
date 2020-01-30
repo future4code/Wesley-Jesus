@@ -1,100 +1,145 @@
-/*  
-1. Ao rodar o código no console, o sistema abrirá um prompt para o usuário digitar o número a ser testado. Depois disso,
-o comando indica ao console que o número enviado pelo usuário será transformado na constante número com valor number. Após
-isso, o console testará o comando if conforme o número que o usuário digitou: se o número digitado, ao ser dividio por 2
-tiver resto 0, será impressa no console a mensagem "Passou no teste". Se o condicional não der true, retornará "Não passou
-no teste"
+/*R. Declarada a variável sum = 0, o código fará para cada variável i (indexador, declarado em for) com valor zero, 
+menor que 15, e será incrementado 1 ao seu valor. A operação a ser feita após é a variável sum ser somada com a 
+variável i. Por exemplo:
+
+Em i = 0, o valor inicial de sum também é. O console exibe zero como resultado. Ao incrementar um em i, 
+o valor a ser impresso no console é 1, pois sum = 0 + i= 1 = 1. E enquanto não chegar o valor de i igual a 15, 
+esse processo se repetirá. A soma é 105.
+
+ let sum = 0
+for(let i = 0; i < 15; i++) {
+  sum+=i
+}
+console.log(sum)
+
+=================================
+
 
 2.
-a. O código criado serve para selecionar a fruta e o respectivo valor, conforme o nome da fruta digitado no prompt: há um
-grupo de itens comutados e, para cada caso, o código exibirá uma fruta e seu respectivo valor.
-b. O preço da fruta Maçã é R$ 2.25.
-c. R$ 19.55
-d. Ao retirar o break para o item desejado, no caso a Pêra, o console exibirá o valor que está abaixo, R$ 5, não o valor
-a ser exibido, que é o de R$ 5.5.
+a. O comando .push permite acrescentarmos mais um item na lista, mesmo essa lista sendo uma constante.
+b. Para cada item da lista: se o item for múltiplo de 5, ou seja, se o item for dividido por 5 e o resto der 0,
+ele será adicionado a uma nova lista.
+Para 10: se 10 dividido por 5 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 11: se 11 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista. 
+Para 12: se 12 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 15: se 15 divivido por 5 tiver resto 0 (v), adicione-o a uma nova lista.
+Para 18: se 18 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 19: se 19 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 21: se 21 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 23: se 23 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 25: se 25 divivido por 5 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 27: se 27 divivido por 5 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 30: se 30 divivido por 5 tiver resto 0 (V), adicione-o a uma nova lista.
 
-3.
-O Terminal exibirá uma mensagem de erro porque a variável mensagem foi criada dentro de um escopo e console.log está fora
-deste escopo, no escopo pai, e o pai não consegue buscar as informações no escopo filho. A mensagem a ser exibida, depois
-de o usuário digitar os números, deveria estar dentro do escopo filho, onde a variável mensagem foi criada.
+Após encerrar os itens da lista, o console exibirá a nova lista formada por: 10, 15, 25, 30  
+
+c. Alterando a variável numero para 3, teríamos a condicional dessa forma:
+Para 10: se 10 dividido por 3 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 11: se 11 divivido por 3 tiver resto 0 (F), adicione-o a uma nova lista. 
+Para 12: se 12 divivido por 3 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 15: se 15 divivido por 3 tiver resto 0 (v), adicione-o a uma nova lista.
+Para 18: se 18 divivido por 3 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 19: se 19 divivido por 3 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 21: se 21 divivido por 3 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 23: se 23 divivido por 3 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 25: se 25 divivido por 3 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 27: se 27 divivido por 3 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 30: se 30 divivido por 3 tiver resto 0 (V), adicione-o a uma nova lista.
+
+Após fazer todos os testes, o console exibirá a nova lista formada por: 12, 15, 18, 21, 27, 30
+
+Alterando a variável numero para 4:
+
+Para 10: se 10 dividido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 11: se 11 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista. 
+Para 12: se 12 divivido por 4 tiver resto 0 (V), adicione-o a uma nova lista.
+Para 15: se 15 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 18: se 18 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 19: se 19 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 21: se 21 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 23: se 23 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 25: se 25 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 27: se 27 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+Para 30: se 30 divivido por 4 tiver resto 0 (F), adicione-o a uma nova lista.
+
+Após todos os testes, a nova lista é: 12.
+
+const lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
+const novaLista = []
+const numero = 5
+for(const item of lista){
+  if(item%numero === 0) {
+    novaLista.push(item)
+  }
+}
+console.log(novaLista)
+
+
+DESAFIO (Se der tempo)
+
+
+=============================
 
 */
 
-const num1 = prompt("Por favor, digite um número: ")
-const num2 = prompt("Por favor, digite outro número: ")
-const num3 = prompt("Por favor, digite outro número: ")
+//3
+let arrayOriginal = [1, 2, 4, 8, 16, 32, 64, 100, 128, 256, 420, 512, 890, 1024, 2048, 4096, 7550, 8192, 16384]
+//a.
+let maiorNumero = arrayOriginal[0]
+let menorNumero = arrayOriginal[6]
 
-if(num1 > num2 && num1 > num3 && num2 > num3) {
-    console.log("Números digitados em ordem decrescente: " + num1 + " " + num2 + " " + num3)
-}
-
-else if(num1 > num3 && num3 > num2) {
-    console.log("Números digitados em ordem decrescente: " + num1 + " " + num3 + " " + num2)
-}
-
-else if(num3 > num2 && num3 > num1 && num2 > num1) {
-    console.log("Números digitados em ordem decrescente: " + num3 + " " + num2 + " " + num1)
-}
-
-else if(num3 > num1 && num1 > num2) {
-    console.log("Números digitados em ordem decrescente: " + num3 + " " + num1 + " " + num2)
-}
-
-else if(num2 > num3 && num2 > num1 && num3 > num1) {
-    console.log("Números digitados em ordem decrescente: " + num2 + " " + num3 + " " + num1)
-}
-
-else if(num2 > num1 && num1 > num3) {
-    console.log("Números digitados em ordem decrescente: " + num2 + " " + num1 + " " + num3)
-}
-
-/*Se eu digitar números iguais, o sistema retorna valor undefined no console e não informa se são iguais ou não, nem 
-os dispõe no console, exceto se criar um else para tal situação, como este */
-else {
-    console.log("Atenção! Você digitou números iguais. Insira pelo menos um número diferente.")
-} 
-
-let ossos
-let pelos
-let racional
-let pena
-let terrestre
-let ambAquatico
-
-ossos = prompt("O animal possui estrutura óssea? [s/n]");
-    if(ossos = "n"){
-        console.log("Animal Invertebrado");
+for(let i = 0; i < arrayOriginal.length; i++) {
+    const elemento = arrayOriginal[i]
+    if(elemento > maiorNumero){
+        maiorNumero = elemento
     }
+    
     else {
-        pelos = prompt("O animal tem pelo? [s/n]");
-        if(pelos = "s") {
-            racional = prompt("O animal é racional? [s/n]");
-            if(racional = "s") {
-                console.log("É um Ser Humano.")
-            }
-            else {
-                console.log("É um mamífero não humano.");
-            }
-        }
-        else {
-            pena = prompt("O animal possui penas? [s/n]");
-            if(pena = "s") {
-                console.log("É uma Ave.");
-            }
-            else {
-                terrestre = prompt("É um animal terrestre? [s/n]");
-                if(terrestre = "s") {
-                    ambAquatico = prompt("Parte de sua vida é em ambiente aquático? [s/n]");
-                    if(ambAquatico = "s") {
-                        console.log("É um animal Anfíbio.");
-                    }
-                    else {
-                        console.log("É um Réptil");
-                    }
-                }
-                else {
-                    console.log("É um Peixe.");
-                }
-            }
-        }
+      menorNumero = elemento
     }
+}
+
+console.log("O maior número da sequência é: " + maiorNumero)
+console.log("O menor número da sequência é: " + menorNumero)
+
+//b.
+const arrayDivDez = []
+const numero = 10
+
+for(const item of arrayOriginal) {
+    if(item%numero === 0){
+        arrayDivDez.push(item)
+    }
+}
+
+console.log(arrayDivDez)
+
+//c.
+const arrayPares = []
+const par = 2
+
+
+for(const item of arrayOriginal) {
+    if(item%par === 0){
+        arrayPares.push(item)
+        
+    }
+}
+
+console.log(arrayPares)
+
+//d.
+
+const arrayMensagemIndex = ["O elemento do Index "]
+const palavra = ["é: "]
+let i = "" 
+let mensagem = ""
+
+for(i = 0; i < arrayOriginal.length; i++) {
+    mensagem = arrayMensagemIndex + "" + [i] + " " + palavra + "" + arrayOriginal[i]
+    console.log(mensagem)
+}
+
+
+
+
