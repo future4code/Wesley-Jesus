@@ -90,6 +90,13 @@ Exercícios de código
 //     return c
 // }
 // alert("Considerando a idade digitada, a idade do cachorro é: " + idadeCachorro())
+let idadeCachorro = (a, b) => {
+    a = prompt("Digite uma idade:")
+    b = 7
+    let c = a*b
+    return c
+}
+alert("Considerando a idade digitada, a idade do cachorro é: " + idadeCachorro())
 
 //b.
 
