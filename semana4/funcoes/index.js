@@ -83,6 +83,13 @@ Exercícios de código
 
 //4.
 //a.
+// let idadeCachorro = (a, b) => {
+//     a = prompt("Digite a idade do cachorro:")
+//     b = 7
+//     let c = a*b
+//     return c
+// }
+// alert("Considerando a idade digitada, a idade do cachorro é: " + idadeCachorro())
 let idadeCachorro = (a, b) => {
     a = prompt("Digite uma idade:")
     b = 7
@@ -101,3 +108,83 @@ alert("Considerando a idade digitada, a idade do cachorro é: " + idadeCachorro(
 // const mensagem = [""]
 
 // }
+
+// let concatenaDados = (nome, idade, endereco, souOuNaoEstudante) => {
+//     if(souOuNaoEstudante === true){
+//         souOuNaoEstudante = "sou"
+//     }
+//     else{
+//         souOuNaoEstudante = "não sou"
+//     }
+
+//     return "Eu sou " + nome + ", tenho " + idade + " anos, moro em " + endereco + " e " + souOuNaoEstudante + " estudante."
+// }
+
+//alert(concatenaDados("Goli", 23, "Rua Guarapari, 190", false))
+
+//5. 
+
+
+
+let seculo = (ano) => {
+      
+        if((ano > 1000) && (ano <= 1100)){
+            return "O ano " + ano + " é pertencente ao Século X. "            
+        } 
+
+        else if(ano > 1100 && ano <= 1200) {
+            return "O ano " + ano + " é pertencente ao Século XI. "
+        }
+        
+        else if(ano > 1200 && ano <= 1300) {
+            return "O ano " + ano + " é pertencente ao Século XII. "
+            
+        }
+
+        else if(ano > 1300 && ano <= 1400) {
+            return "O ano " + ano + " é pertencente ao Século XIII. "
+            
+        }
+
+        else if(ano > 1400 && ano <= 1500) {
+            return "O ano " + ano + " é pertencente ao Século XIV. "
+            
+        }
+
+        else if(ano > 1500 && ano <= 1600) {
+            return "O ano " + ano + " é pertencente ao Século XV. "
+            
+        }
+
+        else if(ano > 1600 && ano <= 1700) {
+            return "O ano " + ano + " é pertencente ao Século XVI. "
+            
+        }
+
+        else if(ano > 1600 && ano <= 1700) {
+            return "O ano " + ano + " é pertencente ao Século XVII. "
+            
+        }
+
+        else if(ano > 1700 && ano <= 1800) {
+            return "O ano " + ano + " é pertencente ao Século XVIII. "
+            
+        }
+
+        else if(ano > 1800 && ano <= 1900) {
+            return "O ano " + ano + " é pertencente ao Século XIX. "
+            
+        }
+
+        else if(ano > 1900 && ano <= 2000) {
+            return "O ano " + ano + " é pertencente ao Século XI. "
+            
+        }
+
+        else if(ano > 2000 && ano <= 2020) {
+            return "O ano " + ano + " é pertencente ao Século XI. "
+            
+        }
+    }
+
+alert(seculo(1588))
