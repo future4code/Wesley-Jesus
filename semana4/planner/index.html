@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Pacifico|Roboto|Sigmar+One|Zhi+Mang+Xing&display=swap" rel="stylesheet" />
+    <title>::: Weekly jobs :::</title>
+  </head>
+  <body>
+
+    <header class="escolhaTarefa">
+        <h2>Agenda Eletrônica - Tarefas a fazer na semana</h2>
+        <container>
+            <label>Nova Tarefa: <input type="text" /></label>
+            <select name="dias" id="diaSemana" value="Selecione um dia">
+                <option value="segunda">Segunda-Feira</option>
+                <option value="terca">Terça-Feira</option>
+                <option value="quarta">Quarta-Feira</option>
+                <option value="quinta">Quinta-Feira</option>
+                <option value="sexta">Sexta-Feira</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <button class="botao" onclick="adicionaTarefa()">Criar Nova Tarefa</button>
+        </container>
+    </header>
+
+    <hr>
+
+    <main>
+        <section class="segunda">
+            <div class="dia">
+                <h4>Segunda-Feira</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="seg">
+
+                </ol>
+            </div>
+        </section>
+
+        <section class="terca">
+            <div class="dia">
+                <h4>Terça-Feira</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="ter">
+                    
+                </ol>
+            </div>
+        </section>    
+
+        <section class="quarta">
+            <div class="dia">
+                <h4>Quarta-Feira</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="qua">
+                    
+                </ol>
+            </div>
+        </section>
+
+        <section class="quinta">
+            <div class="dia">
+                <h4>Quinta-Feira</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="qui">
+                    
+                </ol>
+            </div>
+        </section>
+
+        <section class="sexta">
+            <div class="dia">
+                <h4>Sexta-Feira</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="sex">
+                    
+                </ol>
+            </div>
+        </section>
+
+        <section class="sabado">
+            <div class="dia">
+                <h4>Sábado</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="sab">
+                    
+                </ol>
+            </div>
+        </section>
+        <section class="domingo">
+            <div class="dia">
+                <h4>Domingo</h4>
+            </div>
+            <div class="tarefa">
+                <ol id="dom">
+                    
+                </ol>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
