@@ -1,19 +1,21 @@
-// const filme = {
-//     nome: 'O Ditador',
-//     diretor: 'Larry Charles',
-//     anoLancamento: '2012',
-//     atores: ['Sacha Baron Cohen, Anna Faris, Ben Kingsley'],
-//     filmeAssistido: true,
+class Post {
+    constructor(titulo, subtitulo, autor, fraseIntroducao, conteudo) {
+        this.titulo = titulo
+        this.subtitulo = subtitulo
+        this.autor = autor
+        this.fraseIntroducao = fraseIntroducao
+        this.conteudo = conteudo
+        }
+    }
 
-// }
+    let publicacao1 = new Post(titulo, subtitulo, autor, introd, conteudo)
 
-// const novoFilme = {
-//     ...filme,
-//     nome: 'A Espera de Um Milagre'
-    
-// }
-
-// const filme3 = filme
-// console.log(filme3)
-// console.log(novoFilme)
-
+    function publicarPost() {
+        let titulo = document.getElementById("titulo").value
+        let subtitulo = document.getElementById("subtitulo").value
+        let autor = document.getElementById("autor").value
+        let introd = document.getElementById("introd").value
+        let conteudo = document.getElementById("conteudo").value
+        
+        console.log(publicacao1)
+    }

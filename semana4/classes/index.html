@@ -7,16 +7,18 @@
     <script src="index.js" defer></script>
     <!-- <link href="index.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Pacifico|Roboto|Sigmar+One|Zhi+Mang+Xing&display=swap" rel="stylesheet" /> -->
-    <title>::: Aula 15 :::</title>
+    <title>::: Blog :::</title>
 
   </head>
   <body>
-    <label>Título do post: <input type="text" class="titulo-post" placeholder="Título da matéria" /></label>
-    <label>Subtítulo: <input type="text" class="subtitulo" placeholder="subtitulo" /></label>
-    <label>Autor: <input type="text" class="autor-post" placeholder="autor" /></label>
-    <label>Frase introdução ao tema: <input type="text" class="frase-introd" placeholder="Frase de atenção ao tema" /></label>
-    <label>Conteúdo texto: <textarea>Digite seu texto aqui!</textarea></label>
-    <button class="botao-enviar" onclick>Publicar conteúdo</button>
+    <form class="enviar-post">
+      <label>Título do post: <input type="text" id="titulo" placeholder="Título da matéria" /></label><br><br>
+      <label>Subtítulo: <input type="text" id="subtitulo" placeholder="subtitulo" /></label><br><br>
+      <label>Autor: <input type="text" id="autor" placeholder="autor" /></label><br><br>
+      <label>Frase introdução ao tema: <input type="text" id="introd" placeholder="Frase de atenção ao tema" /></label><br><br>
+      <label>Conteúdo texto: <textarea id="conteudo">Digite seu texto aqui!</textarea></label><br><br>
+      <button type="button" id="botao-enviar" onclick="publicarPost()">Publicar conteúdo</button type = buttonm><br><br>
+    </form>
 
   </body>
 </html>
