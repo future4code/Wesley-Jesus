@@ -8,7 +8,7 @@ class Post {
         }
     }
 
-    let publicacao1 = new Post(titulo, subtitulo, autor, introd, conteudo)
+    let publicacao = new Post(titulo, subtitulo, autor, introd, conteudo)
 
     function publicarPost() {
         let titulo = document.getElementById("titulo").value
@@ -17,5 +17,30 @@ class Post {
         let introd = document.getElementById("introd").value
         let conteudo = document.getElementById("conteudo").value
         
-        console.log(publicacao1)
+        console.log(publicacao)
+
+        let conteudoPostagem = [document.getElementById("titulo").value, document.getElementById("subtitulo").value, document.getElementById("autor").value, document.getElementById("introd").value, document.getElementById("conteudo").value]
+
+        console.log(conteudoPostagem)
+
+        if(titulo !== "" && subtitulo !== "" && autor !== "" && introd !== "" && conteudo !== "") {
+            document.getElementById("titulo").value = ""
+            document.getElementById("subtitulo").value = ""
+            document.getElementById("autor").value = ""
+            document.getElementById("introd").value = ""
+            document.getElementById("conteudo").value = ""
+        }
+        else {
+            alert("É necessário que você digite todos os campos para enviar!")
+        }   
+        
     }
+        
+        function adicionarPublicacao() {
+            // let tituloBlog = document.querySelector("#titulo")
+            conteudoPostagem.innerHTML += "<h2>" + [0] + "</h2>"
+    
+        }
+    
+
+   
