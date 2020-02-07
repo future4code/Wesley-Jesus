@@ -1,6 +1,7 @@
 //Resolução dos exercícios de sexta 07 de fevereiro
 
-/*Exercício 1:
+/*
+====> Exercício 1:
 O código deste exercício converte um determinado valor em Dólar para Reais. Há uma função chamada conversorDeMoeda 
 com parâmetro valorEmDolar que faz o seguinte: abre um prompt para o usuário colocar o valor da cotação do dia,
 retornando o valor do produto da cotação pelo valor em dólar. Logo após, há uma constante declarada em que chama a
@@ -12,7 +13,7 @@ conversaoDeMoeda e o valor a ser convertido de US$ 100. A função pedirá ao us
 valor da cotação, no caso, R$ 4,31. A função realizará o produto dos valores e retornará o resultado. Após
 isso, o console exibirá o valor convertido, que é de R$ 431,00.
 
-Exercício 2:
+====> Exercício 2:
 O código deste exercício mostra o montante arrecadado com investimentos, conforme a carteira (tipo de investimento
 rezliado). Temos uma função, a investeDinheiro, que realizará todos os cálculos, conforme os parâmetros de cada situação. 
 Declarada a função investeDinheiro, ela terá como parâmetros as variáveis tipoDeInvestimento e o valor a ser contabilizado
@@ -42,5 +43,20 @@ O console exibirá como resultado da primeira constante o produto de 150 por 1.1
 150 x 1.1 = 150 x 1 = 150. 150 x 0.1 = 15, logo 165. 
 Como resultado da segunda constante, será exibido um alerta, dizendo ao usuário que o tipo de investimento informado está incorreto.
 
-Exercício 3:
+====> Exercício 3:
+Foram declaradas três variáveis arrays, cujos nomes e valores são:
+const numeros = [25, 12, 55, 64, 121, 44, 11, 84, 51, 48, 14, 73, 111, 283]
+const array1 = []
+const array2 = []
 
+Após, foi criado um laço que se comportará da seguinte forma:
+- Para cada (declaração variável numero) número contido em numeros, se o número for divisível por 2, ele será adicionado ao array1.
+Senão, será adicionado ao array2.
+
+Serão impressos no console as seguintes informações:
+- console.log("Quantidade total de números" , numeros.length) -> Quantidade total de números 14
+- console.log(array1.length) -> 6
+- console.log(array2.length)-> 8
+
+====> Exercício 4:
+Foi declarada uma variável array chamada numeros, com os valores: 
