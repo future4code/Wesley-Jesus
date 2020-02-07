@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <!-- <link href="index.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Pacifico|Roboto|Sigmar+One|Zhi+Mang+Xing&display=swap" rel="stylesheet" /> -->
+    <title>::: Blog :::</title>
+
+  </head>
+  <body>
+    <header>
+
+
+    </header>
+
+    <form class="enviarPost" id="formularioNovoPost"></form>
+      <label>Título do post: <input type="text" id="titulo" placeholder="Título da matéria" /></label><br><br>
+      <label>Subtítulo: <input type="text" id="subtitulo" placeholder="subtitulo" /></label><br><br>
+      <label>Autor: <input type="text" id="autor" placeholder="autor" /></label><br><br>
+      <label>Frase introdução ao tema: <input type="text" id="introd" placeholder="Frase de atenção ao tema" /></label><br><br>
+      <label>Conteúdo texto: <textarea id="conteudo"></textarea></label><br><br>
+      <button type="button" id="botao-enviar" onclick="publicarPost(), adicionarPublicacao()">Publicar conteúdo</button><br><br>
+    </form>
+
+    <main id="container-conteudos">
+      <h2>Publicação dos Posts</h2>
+      <section id="post-novo">
+        
+        <!-- <h3 id="titulo"></h3>
+        <article id="artigo">
+          <h4 id="subtitulo"></h4>
+          <p id="autor"></p>
+          <p id="introd-tema"></p>
+          <p id="conteudo"></p> 
+        </article> -->
+      </section>
+    </main>
+
+  </body>
+</html>
