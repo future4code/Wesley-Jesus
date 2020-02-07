@@ -59,4 +59,14 @@ Serão impressos no console as seguintes informações:
 - console.log(array2.length)-> 8
 
 ====> Exercício 4:
-Foi declarada uma variável array chamada numeros, com os valores: 
+Foi declarada uma variável array constante chamada numeros, com a matriz já determinada. Depois, foram declaradas mais duas variáveis:
+- numero 1 com valor infinito
+- numero 2 com valor 0.
+
+Após isso, entraremos no laço que fará a seguinte operação:
+Para cada (declarada variavel numero) numero do array numeros, se o numero for menor que o numero1, o numero1 será igual ao numero. Se
+o numero for maior que o numero2, o numero2 será igual ao numero.
+
+No console serão impressos os valores assumidos por numero1 e numero2 verificados e que condisseram com a situação proposta:
+console.log(numero1) = todos os valores de numeros, pois todos são menores que infinito.
+console.log(numero2) = todos os valores de numeros que são MAIORES que 0.
