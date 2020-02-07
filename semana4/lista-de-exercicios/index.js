@@ -134,7 +134,27 @@ c) True
 d) True
 e) True
 
+
+===> Exercício 3
+const quantidadeDeNumerosPares
+let i = 0
+while(i <= quantidadeDeNumerosPares) {
+  console.log(i*2)
+}
+
+
+
+
+let numero = Number(prompt("Digite um número:"))
+let i = 0
+let numerosPares = []
+
+for(i = 0; i <= numero; i++){
+    if(i % 2 === 0) {
+        numerosPares.push[i]
+        i++
+    }
+}
+alert("Os números pares entre 0 e " + numero + " são: " + numerosPares[i])
+
 */
-
-
-
