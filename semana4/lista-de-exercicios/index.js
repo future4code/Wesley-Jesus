@@ -74,7 +74,7 @@ console.log(numero2) = todos os valores de numeros que são MAIORES que 0.
 
 Exercícios de Lógica de Programação.
 
-Exercício 1:
+===> Exercício 1:
 Podemos percorrer ou iterar uma lista por várias formas, mas podemos aqui destacar: laços (for, do while, while), por meio de forEach, map e filter.
 Exemplos:
 1 - Laços:
@@ -127,8 +127,14 @@ console.log(cidades)
 console.log(nomeCidades)
 console.log(cidadePoloRM)
 
-
+===> Exercício 2
+a) False
+b) False
+c) True
+d) True
+e) True
 
 */
+
 
 
