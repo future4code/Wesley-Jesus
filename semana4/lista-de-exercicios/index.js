@@ -70,3 +70,65 @@ o numero for maior que o numero2, o numero2 será igual ao numero.
 No console serão impressos os valores assumidos por numero1 e numero2 verificados e que condisseram com a situação proposta:
 console.log(numero1) = todos os valores de numeros, pois todos são menores que infinito.
 console.log(numero2) = todos os valores de numeros que são MAIORES que 0.
+
+
+Exercícios de Lógica de Programação.
+
+Exercício 1:
+Podemos percorrer ou iterar uma lista por várias formas, mas podemos aqui destacar: laços (for, do while, while), por meio de forEach, map e filter.
+Exemplos:
+1 - Laços:
+
+
+const cidades = ["São Paulo", "São José dos Campos", "Campinas", "Sorocaba", "Santos", "Ribeirão Preto"]
+let capital = []
+let poloRegioesMetropolitanas = []
+
+for(let municipio of cidades){
+    if(municipio != "São Paulo"){
+        poloRegioesMetropolitanas.push(municipio)
+    }else{
+        capital.push(municipio)
+    }
+}
+
+console.log("O município de " + capital + "" + " é a capital do Estado.")
+console.log("O(s) município(s) de " + poloRegioesMetropolitanas + "" + " é/são cidade(s) polo de Região(ões) Metropolitana(s).")
+
+
+2 - forEach, map e filter 
+
+const cidades = [
+    { nome: "São Paulo", status: "Capital de Estado", população: 12890310, IDH: 0 },
+    { nome: "São José dos Campos", status: "Cidade Polo de RM", população: 812001, IDH: 0 },
+    { nome: "Jacareí", status: "Município", população: 221209, IDH: 0 },
+    { nome: "Taubaté", status: "Município", população: 245872, IDH: 0 },
+    { nome: "Guararema", status: "Estância Turística", população: 1272413, IDH: 0 },
+    { nome: "Poá", status: "Estância Turística", população: 45841, IDH: 0 },
+    { nome: "Campinas", status: "Cidade Polo de RM", população: 92800, IDH: 0 }
+]
+
+cidades.forEach((municipio, index, array) => {
+    municipio.IDH = 0.75
+})
+
+const nomeCidades = cidades.map((municipio, index, array) => {
+    return municipio.nome
+})
+
+const cidadePoloRM = cidades.filter((municipio, index, array) => {
+    if(municipio.status === "Cidade Polo de RM") {
+        return true
+    }
+    return false
+})
+
+console.log(cidades)
+console.log(nomeCidades)
+console.log(cidadePoloRM)
+
+
+
+*/
+
+
