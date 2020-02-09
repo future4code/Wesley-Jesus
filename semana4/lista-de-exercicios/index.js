@@ -142,7 +142,18 @@ while(i <= quantidadeDeNumerosPares) {
   console.log(i*2)
 }
 
+O código do colega não funciona. Consta uma constante sem valor e não consta também uma forma do usuário digitá-la. 
+Logo, não há como comparar o indexador com o número que deveria ocupar tal constante e, mesmo que houvesse um valor,
+o while entraria em um loop infinito. 
 
+Para exibir todos os valores pares entre 0 e o número digitado, ele tinha que ter declarado uma variável array para
+receber esses números. 
+
+Para descobrir os números pares entre 0 e um número qualquer, seria necessário criar um laço para comparar os valores,
+verificar a condição do indexador ser menor que o numero da constante, incrementar o indexador, enquanto ele for 
+menor ou igual o número digitado. Após isso, seria preciso criar uma condicional que diz se os números do indexador são
+múltiplos ou não de 2, ou seja, se são pares. Sendo par, o indexador será puxado para o array que constará dos números 
+respectivos.  
 
 
 let num = Number(prompt("Digite um número:"))
@@ -160,4 +171,21 @@ console.log(numerosPares)
 console.log("Os números pares entre 0 e " + num + " são: " + numerosPares)
 alert("Os números pares entre 0 e " + num + " são: " + numerosPares)
 
+===> Exercício 4
+alert("Olá! Bem-vindo ao 'Que triângulo é esse?' Você digitará três números e eu direi qual o tipo de triângulo, de acordo com os valores digitados por você!")
+let a = Number(prompt("Digite um número: "))
+let b = Number(prompt("Digite um número: "))
+let c = Number(prompt("Digite um número: "))
+
+if(a === b && b === c && c === a){
+    alert("Você digitou os valores " + a + ", " + b + ", e " + c + ". É um triângulo equilátero, pois ambos os números digitados são iguais")
+} else if(a !== b && b !== c && c !== a){
+    alert("Você digitou os valores " + a + ", " + b + ", e " + c + ". É um triângulo escaleno, pois ambos os números digitados são diferentes")
+} 
+else{
+    alert("Você digitou os valores " + a + ", " + b + ", e " + c + ". É um triângulo isósceles, pois dois dos números digitados são iguais!")
+}
+
+
+===> Exercício 5
 */
