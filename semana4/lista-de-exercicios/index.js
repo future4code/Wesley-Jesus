@@ -188,4 +188,34 @@ else{
 
 
 ===> Exercício 5
+
+let primeiroNumero = Number(prompt("Digite um número:"))
+let segundoNumero = Number(prompt("Digite outro número:"))
+
+
+if(primeiroNumero > segundoNumero){
+    console.log("O maior número digitado é: " + primeiroNumero)
+    console.log(segundoNumero + " não é divisível por " + primeiroNumero)
+    if(primeiroNumero%segundoNumero === 0) {
+        console.log(primeiroNumero + " é divisível por " + segundoNumero)
+    }
+    else {
+        console.log(primeiroNumero + " não é divisível por " + segundoNumero)
+    }
+    console.log("A diferença entre eles é " + (primeiroNumero - segundoNumero))
+} else if(primeiroNumero === segundoNumero){
+    console.log("Você digitou números iguais.")
+} 
+
+else {
+    console.log("O maior número digitado é: " + sgundoNumero)
+    console.log(primeiroNumero + " não é divisível por " + segundoNumero)
+    if(segundoNumero%primeiroNumero === 0) {
+        console.log(segundoNumero + " é divisível por " + primeiroNumero)
+    }
+    else {
+        console.log(segundoNumero + " não é divisível por " + primeiroNumero)
+    }
+    console.log("A diferença entre eles é " + (segundoNumero - primeiroNumero))
+}
 */
