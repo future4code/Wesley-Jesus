@@ -218,4 +218,38 @@ else {
     }
     console.log("A diferença entre eles é " + (segundoNumero - primeiroNumero))
 }
+
+
+Exercícios de FUNÇÕES
+
+====> Exerc. 1: 
+
+let matriz = [-9, 3243, -344, 289, 56, 542, 1, 2, 4, -434, 256]
+let maiorNumero = matriz[0]
+let menorNumero = matriz[1]
+let segundoMaior
+let segundoMenor
+
+function retornaSegundoMaiorESegundoMenor (segundoMaior, segundoMenor) {
+    for(let numeros of matriz) {
+        if(numeros > maiorNumero){
+            maiorNumero = numeros
+            if(maiorNumero < segundoMaior) {
+                segundoMaior = maiorNumero
+            }
+        }
+
+        if(numeros < menorNumero){
+            menorNumero = numeros
+            if(menorNumero > segundoMenor) {
+                segundoMenor = MenorNumero
+            }
+        }
+    }
+    return(segundoMaior, segundoMenor)
+}
+
+console.log("Maior: " + segundoMaior + " / Menor: " + segundoMenor)
+
 */
+
