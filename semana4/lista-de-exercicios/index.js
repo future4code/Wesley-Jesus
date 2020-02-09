@@ -145,16 +145,19 @@ while(i <= quantidadeDeNumerosPares) {
 
 
 
-let numero = Number(prompt("Digite um número:"))
-let i = 0
+let num = Number(prompt("Digite um número:"))
 let numerosPares = []
+let i = 0
 
-for(i = 0; i <= numero; i++){
+
+for(i = 0; i <= num; i++){
     if(i % 2 === 0) {
-        numerosPares.push[i]
-        i++
+        numerosPares.push(i)
     }
 }
-alert("Os números pares entre 0 e " + numero + " são: " + numerosPares[i])
+
+console.log(numerosPares)
+console.log("Os números pares entre 0 e " + num + " são: " + numerosPares)
+alert("Os números pares entre 0 e " + num + " são: " + numerosPares)
 
 */
