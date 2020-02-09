@@ -251,5 +251,15 @@ function retornaSegundoMaiorESegundoMenor (segundoMaior, segundoMenor) {
 
 console.log("Maior: " + segundoMaior + " / Menor: " + segundoMenor)
 
+===> Exerc. 2:
+
+let hello = () => {
+    alert("Hello, Future4!")
+
+    return(alert)
+}
+
+hello(alert)
+
 */
 
