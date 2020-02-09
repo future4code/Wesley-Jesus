@@ -261,5 +261,27 @@ let hello = () => {
 
 hello(alert)
 
+
+Exercícios de OBJETOS
+
+===> Exerc. 1: Os objetos são estruturas com mais de um valor, os quais serão reusados ou até mesmo alterados constantemente. Um array é uma variável
+matricial que permite armazenar várias informações dentro dela, utilizando-a quando queremos as informações de forma ordenada.
+
+===> Exerc 2: 
+
+
+let lado1
+let lado2
+
+function criaRetangulo(lado1, lado2) {
+    lado1 = Number(prompt("Digite um valor para a base do retângulo: "))
+    lado2 = Number(prompt("Digite um valor para a altura do retângulo: "))
+    let largura = (lado1)
+    let altura = (lado2)
+    let perimetro = (2 * (lado1 + lado2))
+    let area = (lado1 * lado2)
+
+    console.log(largura + " " + altura + " " + perimetro + " " + area)
+}
 */
 
