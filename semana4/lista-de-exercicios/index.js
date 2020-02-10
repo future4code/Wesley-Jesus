@@ -288,7 +288,26 @@ function criaRetangulo(largura, altura, perimetro, area) {
 criaRetangulo()
 
 ===> Exerc. 3:
+ 
+const meuFilmeFavorito = {
+    nome: 'Bastardos Inglórios (Inglourious Bastards)',
+    diretor: 'Quentin Tarantino',
+    anoLancamento: 2009,
+    genero: 'Drama',
+    elencoUm: 'Brad Pitt',
+    elencoDois: 'Christoph Waltz',
+    elencoTres: 'Diane Kruger',
+    elencoQuatro: 'Mélanie Laurent',
+    elencoCinco: 'Jacky Ido'
+}
 
+const mensagemParteUm = "Venha assistir ao filme "
+const mensagemParteDois = " de "
+const mensagemParteTres = ", dirigido por "
+const mensagemParteQuatro = ", e estrelado por: "
+const mensagemCompleta = mensagemParteUm + meuFilmeFavorito.nome + mensagemParteDois + meuFilmeFavorito.anoLancamento + mensagemParteTres + meuFilmeFavorito.diretor + mensagemParteQuatro + meuFilmeFavorito.elencoUm + ", " + meuFilmeFavorito.elencoDois + ", " + meuFilmeFavorito.elencoTres + ", " + meuFilmeFavorito.elencoQuatro + ", e " + meuFilmeFavorito.elencoCinco + "."
+
+alert(mensagemCompleta)
 
 */
 
