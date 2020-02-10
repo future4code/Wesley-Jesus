@@ -344,8 +344,30 @@ return anonimo
 
 console.log(anonimizarPessoa(anonimo))
 
+::Exercícios de ARRAY::
+
+===> Exerc. 1: DÚVIDAS NO EX 1 a e b. Não consegui fazer o array puxar e exibir os valores
+
+let array = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+let arrayMaiores = []
+
+function retornaMaiores() {
+    if(array.idade >= 20){
+        arrayMaiores.push(array)
+    }
+}
+
+console.log(arrayMaiores)
+
+
+===> Exerc. 2:
 
 
 */
-
 
