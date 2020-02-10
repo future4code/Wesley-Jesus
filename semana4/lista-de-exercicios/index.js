@@ -366,8 +366,26 @@ function retornaMaiores() {
 console.log(arrayMaiores)
 
 
-===> Exerc. 2:
+===> Exerc. 2: Procurei nos materiais do curso onde estou errando e, sinceramente? Não consigo verificar o que estou errando.
+Parei aqui!
 
+const array = [1, 2, 3, 4, 5, 6]
+
+a.
+
+const arrayVezesDois = []
+let i = 0
+function multiplicaValoresArray () {
+    for(i = 0; i < array.length; i++) {
+        array[i] * 2
+        arrayVezesDois.push([i])
+    }
+
+    console.log(arrayVezesDois)
+}
+
+console.log(multiplicaValoresArray())
 
 */
+
 
