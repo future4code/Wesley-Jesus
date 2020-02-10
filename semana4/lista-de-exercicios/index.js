@@ -309,5 +309,43 @@ const mensagemCompleta = mensagemParteUm + meuFilmeFavorito.nome + mensagemParte
 
 alert(mensagemCompleta)
 
+
+===> Exerc. 4 - não consegui realizar a desestruturação para substituir o nome digitado pela string 'ANÔNIMO'. O console volta o nome na c:
+=>Tentei declarando a variável para o usuário digitar as informações:
+
+let pessoa = {
+    nome: prompt("Digite seu nome: "),
+    idade: prompt("Qual a sua idade? "),
+    email: prompt("Qual o seu e-mail?"),
+    endereco: prompt("Qual o seu endereço?")
+}
+
+=>Depois tentei, mantendo os valores fixos nelas:
+
+let pessoa = {
+    nome: 'Wesley',
+    idade: 32,
+    email: 'wesleyaraujoferminodejesus@gmail.com',
+    endereco: 'Rua Tarabaí, 22, Vila Antonieta, São Paulo/SP'
+}
+
+console.log(pessoa)
+
+let anonimo
+
+function anonimizarPessoa() {
+    anonimo = {
+        nome: 'ANÔNIMO',
+        ...pessoa
+    }
+
+return anonimo
+}
+
+console.log(anonimizarPessoa(anonimo))
+
+
+
 */
+
 
