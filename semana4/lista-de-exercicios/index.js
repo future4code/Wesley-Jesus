@@ -273,15 +273,22 @@ matricial que permite armazenar várias informações dentro dela, utilizando-a 
 let lado1
 let lado2
 
-function criaRetangulo(lado1, lado2) {
+function criaRetangulo(largura, altura, perimetro, area) {
     lado1 = Number(prompt("Digite um valor para a base do retângulo: "))
     lado2 = Number(prompt("Digite um valor para a altura do retângulo: "))
-    let largura = (lado1)
-    let altura = (lado2)
-    let perimetro = (2 * (lado1 + lado2))
-    let area = (lado1 * lado2)
+    largura = (lado1)
+    altura = (lado2)
+    perimetro = (2 * (lado1 + lado2))
+    area = (lado1 * lado2)
 
-    console.log(largura + " " + altura + " " + perimetro + " " + area)
+    alert("A largura é: " + largura + ". A altura é: " + altura + ". O perímetro é: " + perimetro + ". A área do retângulo é: " + area + ".")
+
 }
+
+criaRetangulo()
+
+===> Exerc. 3:
+
+
 */
 
