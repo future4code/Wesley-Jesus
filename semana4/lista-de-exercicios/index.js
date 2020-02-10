@@ -367,7 +367,7 @@ console.log(arrayMaiores)
 
 
 ===> Exerc. 2: Procurei nos materiais do curso onde estou errando e, sinceramente? Não consigo verificar o que estou errando.
-Parei aqui!
+Parei aqui, por ora!
 
 const array = [1, 2, 3, 4, 5, 6]
 
