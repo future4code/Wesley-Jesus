@@ -8,7 +8,7 @@
 }
 
 a:link {
-  color: #ffffff;
+  color: #ff5f02;
 }
 
 a:hover {
@@ -16,7 +16,7 @@ a:hover {
 }
 
 a:visited {
-  color: #ffffff;
+  color: #ff5f02;
 }
 
 
@@ -31,9 +31,13 @@ header {
 
 .titulo-header {
   max-width: 100%;
+  color: #ffffff;
+  text-shadow: -3px 3px #605b57;
 }
+
+
 .pesquisa {
-  width: 20vw;
+  width: 30vw;
   height: 3vh;
   border-radius: 4px;
   
@@ -61,7 +65,7 @@ header {
 
 .principal {
   width: 100%;
-  height: 80vh;
+  height: 95vh;
   display: grid;
   grid-template: 50% 50% / 20% 20% 20% 20%;
   align-items: center;
@@ -72,10 +76,10 @@ header {
 
 
 figure {
-  border: 1px solid #7a3908;
+  border: none;
   width: 100%;
   height: 24vh;
-  text-align: center;
+  /* text-align: center; */
 
 }
 
@@ -86,12 +90,21 @@ img {
 }
 
 p {
-  font-size: 1.3em;
-  font-family: 'Bangers', cursive;
-  color: #f2924d;
-  text-shadow: -3px 3px #665d56;
+  font-size: .8em;
+  text-shadow: -2px 2px #c6c6c6;
+  font-weight: bold;
 }
 
+p#segundo {
+  font-size: .7em;
+
+}
+
+p#nome-canal {
+  font-size: .6em;
+  color: #3d3d3d;
+  margin-top: 4%;
+}
 
 /* Rodapé */
 footer {
