@@ -70,7 +70,7 @@ function App() {
             <figure className="imagens-videos" id="link7">
                 <img src={ require("./vid7.png") } />
                 <p>REALIDADES PARALELAS - A Estrela que move consigo o Espaço-Tempo!</p>
-                <p id="segundo">Einsten, quando falou sobre a teoria da relatividade, menci...</p>
+                <p id="segundo">Einstein, quando falou sobre a teoria da relatividade, menci...</p>
                 <p id="nome-canal">Future4Science</p>
             </figure>
 
