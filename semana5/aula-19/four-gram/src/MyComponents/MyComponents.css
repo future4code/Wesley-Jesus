@@ -1,0 +1,54 @@
+.image-container {
+    background-color: #e4e3e3;
+    width: 35%;
+    height: 30%;
+    border: 1px solid hsl(17, 98%, 22%);
+    display: flexbox;
+    flex-direction: rows;
+    margin: 2% auto 2% auto;
+    padding: auto;
+    box-shadow: -2% 2% #333333;
+    
+
+}
+
+.head-profile {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    padding: 2%;
+}
+
+.profile-photo {
+    width: 70%;
+    border-radius: 50%;
+    border: 2px solid #501102;
+    padding: 3% 3% 3% 3%;
+}
+
+h4 {
+    padding: 5%;
+}
+
+.posts {
+    width: 100%;
+}
+
+.button-section{
+    display: flexbox;
+    flex-direction: row;
+    
+}
+
+.button-section-one {
+    width: 40%;
+    text-align: left;
+}
+
+.button-section-two {
+    width: 40%;
+    text-align: right;
+}
+
+/* svg {
+    
+} */

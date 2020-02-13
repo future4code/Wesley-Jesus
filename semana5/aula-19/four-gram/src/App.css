@@ -1,0 +1,14 @@
+.App {
+    display: flexbox;
+    flex-direction: rows;
+    justify-content: space-between;
+    background-color: #f8ac7a;
+    padding-top: 3%;
+    
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: -3px 3px #4d1601;
+    text-align: center;
+}
