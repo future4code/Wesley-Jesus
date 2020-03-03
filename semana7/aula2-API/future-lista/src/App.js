@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Components } from 'react'
+import './App.css'
+//import axios from 'axios'
+import PropTypes from 'prop-types'
+import './Botao.js'
+import TelaCadastroUsuario from './Components/TelaCadastroUsuario'
+import UsuariosCadastrados from './Components/UsuariosCadastrados'
 
-function App() {
+const baseUrl = 'https://us-central1-future4-users.cloudfunctions.net/api'
+const auth = "string"
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      telaAtual: <TelaCadastroUsuario />
+    }
+  }
+
+  trocarDePagina = () => {
+    if(this.state.telaAtual === <TelaCadastroUsuario />) {
+      this.setState({telaAtual: <UsuariosCadastrados />})
+    }
+  }
+
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="cabecalho-app">
+        <button onClick={this.trocarDePagina()}>
+        Teste
+        </button>
       </header>
+      
+      <hr/ >
+      <section className="cadastro-ou-lista">
+      <TelaCadastroUsuario />
+      </section>
+      
+
     </div>
-  );
+  )
+}
 }
 
-export default App;
+export default App
