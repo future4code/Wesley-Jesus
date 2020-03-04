@@ -36,7 +36,7 @@ class App extends React.Component {
       <div className="App">
         <header className="cabecalho-app">
           {/* Ao clicar no botão, o método trocarDeTela será chamado e, com isso, a tela será trocada */}
-          <button onClick={this.trocarDeTela}>
+          <button className="troca-tela" onClick={this.trocarDeTela}>
           { botao }
           </button>
         </header>

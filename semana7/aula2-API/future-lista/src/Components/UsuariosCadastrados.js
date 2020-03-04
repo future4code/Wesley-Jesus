@@ -53,17 +53,16 @@ class UsuariosCadastrados extends React.Component {
             headers: {
                 'api-token': 'Wesley'
             }
+        
         })
-
+        
         apagarUsuarioPromessa.then((response) => {
             window.alert("Usuário apagado com sucesso!")
             this.buscarUsuariosCadastrados()
         }).catch((error) => {
             alert("Ocorreu um erro ao apagar usuário!")
-            console.log(error.response.data.message)
-            
+            console.log(error.response.data.message)  
         })
-
     }
 
     render() {    

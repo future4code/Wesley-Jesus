@@ -2,14 +2,15 @@
   text-align: center;
 }
 
+.troca-tela{
+  margin: 1% 0 1% 1%;
+}
+
 .cabecalho-app {
   text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
